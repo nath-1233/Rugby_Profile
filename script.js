@@ -15,7 +15,7 @@ navigation.querySelectorAll("a").forEach((link) => {
 });
 
 const filterButtons = document.querySelectorAll(".filter-button");
-const awardCards = document.querySelectorAll(".award-card");
+const achievementRows = document.querySelectorAll(".achievement-table tbody tr");
 const filterStatus = document.querySelector(".filter-status");
 
 filterButtons.forEach((button) => {
@@ -29,13 +29,13 @@ filterButtons.forEach((button) => {
       item.setAttribute("aria-pressed", String(isActive));
     });
 
-    awardCards.forEach((card) => {
-      const isVisible = filter === "all" || card.dataset.format === filter;
-      card.hidden = !isVisible;
+    achievementRows.forEach((row) => {
+      const isVisible = filter === "all" || row.dataset.format === filter;
+      row.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
     });
 
-    const formatName = filter === "all" ? "all honours" : `rugby ${filter}`;
+    const formatName = filter === "all" ? "all achievements" : `rugby ${filter}`;
     filterStatus.textContent = `Showing ${visibleCount} ${formatName}.`;
   });
 });
