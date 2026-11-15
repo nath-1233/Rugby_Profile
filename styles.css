@@ -41,10 +41,8 @@ button { font: inherit; }
 h1, h2, h3, p { margin-top: 0; }
 .hero h1 { margin: 0; font: 800 clamp(82px, 11.6vw, 156px)/.79 var(--display); letter-spacing: -5px; }
 .hero h1 span { color: var(--lime); }
-.hero-role { display: flex; align-items: center; gap: 13px; margin-top: 27px; }
-.role-line { width: 33px; height: 2px; background: var(--orange); }
+.hero-role { margin-top: 27px; }
 .hero-role p { margin: 0; font-size: 13px; letter-spacing: 1.7px; }
-.hero-role p span { padding-inline: 5px; color: var(--lime); }
 .hero-intro { max-width: 345px; margin: 20px 0 24px; color: #aeb0a7; font-size: 13px; line-height: 1.8; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 23px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 26px; min-height: 46px; padding: 0 17px; font-size: 11px; font-weight: 700; transition: background .2s, color .2s, transform .2s; }
